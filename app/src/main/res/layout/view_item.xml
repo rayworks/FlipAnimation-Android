@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:translationZ="8dp">
+
+    <RelativeLayout
+        android:id="@+id/back_layout"
+        android:layout_width="280dp"
+        android:layout_height="360dp"
+        android:layout_alignBottom="@id/front_layout"
+        android:layout_alignTop="@id/front_layout"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bkg_round_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Back text"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/front_layout"
+        android:layout_width="280dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bkg_round_white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Front text"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+
+
+</RelativeLayout>
